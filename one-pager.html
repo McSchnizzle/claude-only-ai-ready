@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AISupportPDX - One Pager</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: letter portrait;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #FAF9F6;
+      color: #4A5568;
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: #FAF9F6;
+      position: relative;
+    }
+
+    @media print {
+      .page {
+        margin: 0;
+        padding: 0.5in;
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.3in;
+      padding-bottom: 0.15in;
+      border-bottom: 2px solid #A7C4A0;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-placeholder {
+      width: 50px;
+      height: 50px;
+      background: #1B4332;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+
+    .company-info h1 {
+      font-size: 18pt;
+      color: #1B4332;
+      font-weight: 700;
+    }
+
+    .company-info .tagline {
+      color: #B87333;
+      font-size: 10pt;
+      font-weight: 600;
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 9pt;
+      color: #4A5568;
+    }
+
+    .main-headline {
+      text-align: center;
+      font-size: 22pt;
+      color: #1B4332;
+      font-weight: 700;
+      margin-bottom: 0.15in;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 6in;
+      margin: 0 auto 0.25in;
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    .columns {
+      display: flex;
+      gap: 0.25in;
+      margin-bottom: 0.25in;
+    }
+
+    .column {
+      flex: 1;
+      background: white;
+      padding: 0.2in;
+      border-radius: 8px;
+      border: 1px solid #A7C4A0;
+    }
+
+    .column h3 {
+      color: #1B4332;
+      font-size: 12pt;
+      margin-bottom: 0.1in;
+      padding-bottom: 0.05in;
+      border-bottom: 2px solid #B87333;
+    }
+
+    .column ul {
+      list-style: none;
+      font-size: 9pt;
+    }
+
+    .column li {
+      padding: 3px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .column li::before {
+      content: "✓";
+      color: #B87333;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .why-us {
+      display: flex;
+      gap: 0.3in;
+      margin-bottom: 0.25in;
+    }
+
+    .why-box {
+      flex: 1;
+      text-align: center;
+      padding: 0.15in;
+    }
+
+    .why-icon {
+      width: 36px;
+      height: 36px;
+      background: #A7C4A0;
+      border-radius: 50%;
+      margin: 0 auto 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1B4332;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+
+    .why-box h4 {
+      color: #1B4332;
+      font-size: 10pt;
+      margin-bottom: 4px;
+    }
+
+    .why-box p {
+      font-size: 8pt;
+      color: #4A5568;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #B87333 0%, #9A5F2A 100%);
+      color: white;
+      padding: 0.25in;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 0.2in;
+    }
+
+    .cta-box h2 {
+      font-size: 16pt;
+      margin-bottom: 8px;
+    }
+
+    .cta-box p {
+      font-size: 10pt;
+      margin-bottom: 12px;
+      opacity: 0.95;
+    }
+
+    .cta-box .email {
+      font-size: 14pt;
+      font-weight: 700;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 20px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0.4in;
+      left: 0.5in;
+      right: 0.5in;
+      text-align: center;
+      font-size: 8pt;
+      color: #4A5568;
+      padding-top: 0.1in;
+      border-top: 1px solid #A7C4A0;
+    }
+
+    .footer span {
+      color: #1B4332;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="logo-section">
+        <div class="logo-placeholder">AI</div>
+        <div class="company-info">
+          <h1>AISupportPDX</h1>
+          <div class="tagline">Your Local AI Partner</div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div>hello@aisupportpdx.com</div>
+        <div>AISupportPDX.com</div>
+        <div>Portland, OR</div>
+      </div>
+    </div>
+
+    <h2 class="main-headline">Make 2026 Your Year of AI — With a Partner You Can Trust</h2>
+
+    <p class="intro">
+      AI has moved from bleeding edge to business essential. <strong>AISupportPDX</strong>, powered by Vital Enterprises'
+      30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
+    </p>
+
+    <div class="columns">
+      <div class="column">
+        <h3>Assess</h3>
+        <ul>
+          <li>AI Readiness Assessment</li>
+          <li>Website AI Audit (SEO, AEO, GEO)</li>
+          <li>Opportunity identification</li>
+          <li>Technology stack review</li>
+          <li>Privacy & security evaluation</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Implement</h3>
+        <ul>
+          <li>Chatbots & voice agents</li>
+          <li>Content automation tools</li>
+          <li>Cold outreach systems</li>
+          <li>Custom AI applications</li>
+          <li>Secure on-prem AI (NVIDIA DGX)</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Train</h3>
+        <ul>
+          <li>Executive AI briefings</li>
+          <li>Developer team training</li>
+          <li>Agentic coding tools</li>
+          <li>Ongoing strategy support</li>
+          <li>Quarterly State of AI updates</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="why-us">
+      <div class="why-box">
+        <div class="why-icon">30+</div>
+        <h4>Years of Tech Leadership</h4>
+        <p>VTM & Novus Labs experience across global tech consortiums</p>
+      </div>
+      <div class="why-box">
+        <div class="why-icon">PDX</div>
+        <h4>Local Portland Presence</h4>
+        <p>We're your neighbors, invested in the community you serve</p>
+      </div>
+      <div class="why-box">
+        <div class="why-icon">🔒</div>
+        <h4>Privacy-First Options</h4>
+        <p>On-premise & air-gapped solutions for maximum security</p>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h2>FREE Dec 2025 – Jan 2026 Consultation</h2>
+      <p>Book your no-obligation AI readiness assessment before year-end. 30 minutes. Custom recommendations. No strings attached.</p>
+      <div class="email">→ hello@aisupportpdx.com</div>
+    </div>
+
+    <div class="footer">
+      <span>AISupportPDX</span> | Powered by Vital Enterprises | Portland, OR | AISupportPDX.com
+    </div>
+  </div>
+</body>
+</html>
